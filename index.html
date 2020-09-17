@@ -13,7 +13,7 @@
 			<div class="container">
 				<nav class="navbar" role="navigation" aria-label="main navigation">
 					<div class="navbar-brand">
-						<a class="navbar-item" href="/">
+						<a class="navbar-item" href="/" title="Tillbaka till startsidan">
 							<figure class="image is-64x64 is-square is-hidden-touch">
 								<img
 									src="./images/Me.png"
@@ -50,18 +50,17 @@
 
 					<div id="navigation" class="navbar-menu">
 						<div class="navbar-start">
-							<a href="./projekt.html" class="navbar-item">
+							<a href="./projekt.html" class="navbar-item" title="Projekt">
 								<span class="navbar-item-name">Projekt</span>
 							</a>
 
-							<a href="/artiklar.html" class="navbar-item">
+							<a href="/artiklar.html" class="navbar-item" title="Artiklar">
 								<span class="navbar-item-name">Artiklar</span>
 							</a>
 
-							<a href="./kontakt.html" class="navbar-item">
+							<a href="./kontakt.html" class="navbar-item" title="Kontakt">
 								<span class="navbar-item-name">Kontakt</span>
 							</a>
-
 						</div>
 
 						<div class="navbar-end">
@@ -69,6 +68,7 @@
 								<a
 									href="https://github.com/devpaps"
 									class="navbar-item is-size-5"
+									title="Github"
 								>
 									<span class="icon is-hidden-touch"
 										><img src="./images/github.png" alt="Github"
@@ -82,6 +82,7 @@
 								<a
 									href="https://www.linkedin.com/in/larsj%C3%B6nsson/"
 									class="navbar-item is-size-5"
+									title="LinkedIn"
 								>
 									<span class="icon is-hidden-touch"
 										><img src="./images/linkedin.png" alt="LinkedIn"
@@ -100,67 +101,86 @@
 
 		<main class="main">
 			<div class="container columns info mb-6">
-        <section class="column">
-				<div class="intro"> 
-					<h3 class="subheading">- Introduktion</h3>
-				</div>
-				<div class="container hero">
-					<h1
-						class="has-text-weight-bold white-color is-size-1-fullhd is-size-2-widescreen is-size-3-desktop is-size-4-touch heading"
-					>
-						Lars Jönsson
-					</h1>
-					<h2>
-						<strong class="white-color"
-							>Frilansande utvecklare med känsla för design och bra kod.</strong
+				<section class="column">
+					<div class="intro">
+						<h3 class="subheading">- Introduktion</h3>
+					</div>
+					<div class="container hero">
+						<h1
+							class="has-text-weight-bold white-color is-size-1-fullhd is-size-2-widescreen is-size-3-desktop is-size-4-touch heading"
 						>
-					</h2>
+							Lars Jönsson
+						</h1>
+						<h2>
+							<strong class="white-color"
+								>Frilansande utvecklare med känsla för design och bra
+								kod.</strong
+							>
+							<br />
+							<br />
+							<strong class="white-color">
+								Jag bor i norra Sverige med mina tre barn och min sambo. Jag
+								började lära mig webbutveckling 2015, sedan dess har jag alltid
+								vetat att det är vad jag ska göra under resten av min karriär.
+								<br />
+								Idag arbetar jag främst med React, eller Jam-stacken. Mina
+								intressen är, flygplan, astronomi och jag lyssnar just nu mycket
+								på SynthWave musik när jag sitter och programmerar. På min
+								fritid brukar jag träna i gymmet. Jag har också tävlat i
+								bänkpress, där jag har två guldmedaljer.
+							</strong>
+						</h2>
+					</div>
+					<button class="button has-text-weight-bold kontakta">
+						Låt mig hjälpa dig
+					</button>
+				</section>
+				<section class="column">
+					<figure class="me-kayak image">
+						<img src="./images/me2.jpg" class="me2" alt="Lars Jönsson" />
+					</figure>
+				</section>
+			</div>
+			<section class="section">
+				<div class="container">
+					<div class="columns">
+						<div class="column is-4 white-color">
+							<div class="border px-4 py-4">
+								<h1 class="is-size-3 has-text-weight-bold">Github</h1>
+								<h2 class="is-size-5">
+									Mina projekt jag jobbat på sedan tidigare.
+								</h2>
+								<a href="./projekt.html">Kika in här</a>
+							</div>
+						</div>
+						<div class="column is-4 white-color">
+							<div class="border px-4 py-4">
+								<h1 class="is-size-3 has-text-weight-bold">Artiklar</h1>
+								<h2 class="is-size-5">
+									Skriver allt från hur det är att plugga på distans till
+									utvecklare till hur jag tar personbästa i roddmaskinen. 😄
+								</h2>
+								<a href="./artiklar.html">Kika in här</a>
+							</div>
+						</div>
+						<div class="column is-4 white-color">
+							<div class="border px-4 py-4">
+								<h1 class="is-size-3 has-text-weight-bold">Cv</h1>
+								<h2 class="is-size-5">Titta på mina andra erfarenheter.</h2>
+								<a href="./cv/CV - Lars Jönsson.pdf" download>Ladda hem</a>
+							</div>
+						</div>
+					</div>
 				</div>
-				<button class="button has-text-weight-bold kontakta">
-					Låt mig hjälpa dig
-        </button>
-      </section>
-      <section class="column">
-        <figure class="me-kayak image">
-          <img src="./images/me2.jpg" class="me2" alt="Lars Jönsson">
-        </figure>
-      </section>
-      </div>
-      <section class="section">
-        <div class="container">
-          <div class="columns ">
-            <div class="column is-4 white-color">
-              <div class="border px-4 py-4">
-                <h1 class="is-size-3 has-text-weight-bold">Github</h1>
-                <h2 class="is-size-5 ">Mina projekt jag jobbat på sedan tidigare.</h2>
-                <a href="./projekt.html">Kika in här</a>
-              </div>
-            </div>
-            <div class="column is-4 white-color">
-              <div class="border px-4 py-4">
-                <h1 class="is-size-3 has-text-weight-bold">Artiklar</h1>
-                <h2 class="is-size-5 ">Skriver allt från hur det är att plugga på distans till utvecklare till hur jag tar personbästa i roddmaskinen. 😄</h2>
-                <a href="./artiklar.html">Kika in här</a>
-              </div>
-            </div>
-            <div class="column is-4 white-color">
-              <div class="border px-4 py-4">
-                <h1 class="is-size-3 has-text-weight-bold">Cv</h1>
-                <h2 class="is-size-5 ">Titta på mina andra erfarenheter.</h2>
-                <a href="./cv/CV - Lars Jönsson.pdf" download>Ladda hem</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <section class="section">
-      <footer>
-        <div class="container">
-          <p class="white-color text-center">© 2020 - Lars Jönsson</p>
-        </div>
-      </footer>
-    </section>
+			</section>
+		</main>
+		<section class="section">
+			<footer>
+				<div class="container">
+					<p class="white-color text-center">© 2020 - Lars Jönsson</p>
+				</div>
+			</footer>
+		</section>
 		<script src="./js/index.js"></script>
 	</body>
 </html>
