@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
 
-    // Add a click event on each of them
+    // Add a click event on each of them 
     $navbarBurgers.forEach( el => {
       el.addEventListener('click', () => {
 
