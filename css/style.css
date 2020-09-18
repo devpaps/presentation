@@ -6,18 +6,18 @@
   --link-color: #ffd326;
   --link-color-hover: #e6b800;
 
-  --button-primary-backround: #ffd326;
-  --button-primary-backround-hover: #e6b800;
+  --button-primary-backround: #ffcb00;
+  --button-primary-backround-hover: #ffd631;
+  --button-primary-color: #000;
+
+  --dark-background: #0B0D1A;
+  --light-background: #f1f1f1;
+  --dark-text-color: #363636;
 }
-
-
 
 body, html {
-  background: var(--main-background-color);
-}
-
-.navbar {
-  background: var(--main-background-color);
+  background: var(--dark-background);
+  color: var(--light-background);
 }
 
 .navbar-start {
@@ -25,7 +25,7 @@ body, html {
 }
 
 .navbar-item, .navbar-item-name {
-  color: var(--nav-link-color);
+  color: var(--light-background);
   font-size: 20px;
   font-weight: 900;
 }
@@ -58,10 +58,6 @@ body, html {
   transform: rotate(45deg);
 }
 
-.white-color {
-  color: var(--main-text-color);
-}
-
 .hero {
   margin-bottom: 3rem;
 }
@@ -83,6 +79,7 @@ main {
 
 .subheading {
   font-weight: bold;
+  color: var(--dark-text-color);
 }
 
 .heading {
@@ -92,11 +89,13 @@ main {
 .button {
   background: var(--button-primary-backround);
   border-color: transparent;
+  color: var(--button-primary-color);
 }
 
 .button:hover {
   background: var(--button-primary-backround-hover);
   border-color: transparent;
+  color: var(--button-primary-color);
 }
 
 .me-kayak img {
@@ -123,7 +122,7 @@ main {
 }
 
 .border a {
-  display: block;
+  display: inline-block;
   margin-top: 1em;
   color: var(--link-color);
 }
