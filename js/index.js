@@ -1,11 +1,4 @@
-import displayRepos from "./modules/displayRepos.mjs";
-
-
-export default async function start() {
-
-  // Gets the data back from Github
-  console.log(displayRepos);
-
+function start() {
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -32,4 +25,4 @@ export default async function start() {
 
 
 
-document.addEventListener('DOMContentLoaded', displayRepos)
+document.addEventListener('DOMContentLoaded', start)
