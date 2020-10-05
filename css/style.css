@@ -109,12 +109,19 @@ main {
 /* END MAIN */
 
 /* LINKS */
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: var(--link-color);
+}
 
 .border {
   border: 2px solid #fff;
   border-radius: 5px;
   will-change: transform;
-  transition: all 300ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .border:hover {
@@ -131,7 +138,24 @@ main {
   color: var(--link-color-hover);
 }
 
-/* LINKS */
+/* END LINKS */
+
+
+/* PROJEKT */
+
+#repos {
+  display: grid;
+  grid-template-columns: repeat( 4, minmax(250px, 1fr) );
+  grid-gap: 3rem;
+}
+
+.repo {
+  padding: 1rem;
+}
+
+
+/* END PROJEKT */
+
 
 @media screen and (max-width: 1023px) {
   .navbar-menu {
