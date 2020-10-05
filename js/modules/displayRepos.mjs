@@ -10,11 +10,12 @@ export function displayRepos(repos) {
 
   const displayText = `
     ${repos.map(repo => `
-      <div class="repo border">
-        <h1 class="title is-3 is-capitalized">${repo.name}</h1>
-        <h2 class="is-capitalized">${repo.description  ? repo.description : `Ingen beskrivning tillgänglig`}</h2>
-        <a href="${repo.html_url}">Kolla repot</a>
-      </div>
+      <a href="${repo.html_url}">
+        <div class="repo border">
+          <h1 class="title is-4 is-capitalized">${repo.name}</h1>
+          <h2 class="is-capitalized">${repo.description  ? repo.description : `Ingen beskrivning tillgänglig`}</h2>
+          </div>
+        </a>
     `).join('')}
   `;
 
