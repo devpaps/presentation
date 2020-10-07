@@ -1,0 +1,35 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "I den här uppgiften så valde jag att gå på att göra en statisk webbsida med enbart *HTML* , *CSS* samt *Javascript*. Till css ramverk valde jag [Bulma]([https://bulma.io/]).\r *Missuppfattade uppgiften, trodde att vi skulle köra på css ramverk.* I uppgifts beskrivningen stod det att man skulle ange sitt CV på webbsidan. Men jag tänkte att det vore roligare både för mig och kanske arbetsgivaren att få välja själv om han vill se mitt CV eller inte. Så jag valde att lägga det som en alternativ nedladdning.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devpaps/presentation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devpaps/presentation/issues"
+  },
+  "homepage": "https://github.com/devpaps/presentation#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "gray-matter": "^4.0.2",
+    "markdown-it": "^11.0.1",
+    "mongoose": "^5.10.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "nodemon": "^2.0.4"
+  }
+}
