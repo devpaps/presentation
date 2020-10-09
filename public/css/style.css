@@ -79,7 +79,24 @@ main {
 
 .subheading {
   font-weight: bold;
-  color: var(--dark-text-color);
+  color: var(--link-color);
+  position: relative;
+  left: 50px;
+}
+
+.subheading::before {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 2px;
+  background-color: var(--link-color);
+  position: absolute;
+  z-index: 1;
+  left: -50px;
+  top: calc(50% + 1px);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .heading {
