@@ -1,7 +1,8 @@
 ---
 title: "Min resa"
+date: 1 Oktober 2020
 description: "En krokig väg har det varit"
-image: A nice image representing the blog post, mainly meant for the <meta> tags
+image: "../images/road.jpg"
 ---
 
 Blog post content here

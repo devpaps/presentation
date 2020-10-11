@@ -44,15 +44,16 @@ app.get("/blog", (req, res) => {
 // post.ejs
 app.get('/blog/:article', (req, res) => {
   const file = matter.read(__dirname + '/blog/' + req.params.article + '.md');
-  console.log(file);
-  console.log(req.params.article);
+  
     // use markdown-it to convert content to HTML
     var md = require("markdown-it")();
     let content = file.content;
     var result = md.render(content);
-    res.render("post", {
+    console.log(result);
+    res.render("posts", {
       post: result,
       title: file.data.title,
+      date: file.data.date,
       description: file.data.description,
       slug: req.params.article,
       image: file.data.image

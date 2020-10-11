@@ -1,7 +1,8 @@
 ---
 title: "Codepen"
+date: 5 Oktober 2020
 description: "Jag upptäckte Devtips av en slump på Youtube."
-image: A nice image representing the blog post, mainly meant for the <meta> tags
+image: "../images/dream.jpg"
 ---
 
 Blog post content here

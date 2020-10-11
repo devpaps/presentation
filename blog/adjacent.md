@@ -1,7 +1,10 @@
 ---
 title: "insertAdjacentHTML()"
+date: 11 Oktober 2020
 description: "En snabb metod för att parsa HTML"
-image: A nice image representing the blog post, mainly meant for the <meta> tags
+image: "../images/adjacent.jpg"
 ---
 
-Blog post content here
+
+![sdff](../images/adjacent.jpg)
+# Blog post content here
