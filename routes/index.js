@@ -6,7 +6,7 @@ const matter = require('gray-matter');
 const fs = require('fs');
 
 router.get('/', (req, res) => {
-	res.render('index');
+  res.render('index')
 });
 
 router.get('/kontakt', (req, res) => {

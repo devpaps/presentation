@@ -171,9 +171,16 @@ a:hover {
   padding: 1rem;
 }
 
+/* END ARTICLE */
 
-/* END PROJEKT */
+/* BLOG */
 
+.date {
+  font-weight: 700;
+  vertical-align: text-bottom;
+}
+
+/* END BLOG */
 
 @media screen and (max-width: 1023px) {
   .navbar-menu {
