@@ -13,6 +13,7 @@
   --dark-background: #0B0D1A;
   --light-background: #f1f1f1;
   --dark-text-color: #363636;
+  --dark-subtitle-color: #dbdbdb;
 }
 
 body, html {
@@ -79,7 +80,7 @@ main {
 
 .subheading {
   font-weight: bold;
-  color: var(--link-color);
+  color: var(--button-primary-backround);
   position: relative;
   left: 50px;
 }
@@ -89,7 +90,7 @@ main {
   display: block;
   width: 35px;
   height: 2px;
-  background-color: var(--link-color);
+  background-color: var(--button-primary-backround);
   position: absolute;
   z-index: 1;
   left: -50px;
@@ -97,6 +98,15 @@ main {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.lead-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sub-text {
+  font-weight: 500;
 }
 
 .heading {
@@ -178,6 +188,10 @@ a:hover {
 .date {
   font-weight: 700;
   vertical-align: text-bottom;
+}
+
+.subtitle {
+  color: var(--dark-subtitle-color);
 }
 
 /* END BLOG */
