@@ -1,68 +1,46 @@
+'use strict';
+
 const express = require('express');
 const app = express();
-const path = require('path')
-const router = express.Router();
-const fs = require('fs');
+const path = require('path');
+const router = require('./routes/index.js');
 
-app.set('view engine', 'ejs')
-const bodyParser = require("body-parser");
+
+const middleware = require('./middleware/index.js');
+
+app.set('view engine', 'ejs');
+const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.set('views', path.join(__dirname, 'views'));
+
 let port = process.env.PORT || 5000;
 
-//app.use('/artiklar', articleRouter)
-app.use('/css',express.static(__dirname + '/public/css'));
-app.use('/js',express.static(__dirname + '/public/js'));
-app.use('/modules',express.static(__dirname + '/public/js/modules'));
-app.use('/images',express.static(__dirname + '/public/images'));
+app.use(middleware.incomingtoConsole);
+app.use(express.static(path.join(__dirname + '/public')));
 
+app.use('/', router);
 
-app.get('/', (req, res) => {
-  res.render('index');
-})
+app.listen(port, logStartUpDetailsToConsole);
 
-app.get('/kontakt', (req, res) => {
-  res.render('kontakt');
-})
+function logStartUpDetailsToConsole() {
+	let routes = [];
 
-app.get('/projekt', (req, res) => {
-  res.render('projekt');
-})
+	// app._router för att få alla routes i express router
+	app._router.stack.forEach((middleware) => {
+		if (middleware.route) {
+			// Routes registered directly on the app
+			routes.push(middleware.route);
+		} else if (middleware.name === 'router') {
+			middleware.handle.stack.forEach((handler) => {
+				let route;
 
-// blog.ejs
-app.get("/blog", (req, res) => {
-  const posts = fs.readdirSync(__dirname + '/blog').filter(file => file.endsWith('.md'));
-  
-  res.render("blog", {
-    posts: posts,
-    matter: matter
-    //title: file.data.title
-  });
-});
-
-// post.ejs
-app.get('/blog/:article', (req, res) => {
-  const file = matter.read(__dirname + '/blog/' + req.params.article + '.md');
-  
-    // use markdown-it to convert content to HTML
-    var md = require("markdown-it")();
-    let content = file.content;
-    var result = md.render(content);
-    console.log(result);
-    res.render("posts", {
-      post: result,
-      title: file.data.title,
-      date: file.data.date,
-      description: file.data.description,
-      slug: req.params.article,
-      image: file.data.image
-    });
-})
-
-
-//router.use('/artiklar', articleRouter);
-
-const matter = require('gray-matter');
-
-app.listen(port);
+				route = handler.route;
+				route && routes.push(route);
+			});
+		}
+	});
+	console.info(`Server is listening on port ${port}.`);
+	console.info('Available routes are:');
+	console.info(routes);
+}
