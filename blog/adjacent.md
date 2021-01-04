@@ -5,8 +5,7 @@ description: "En snabb metod för att parsa HTML"
 image: "../images/adjacent-opt.jpg"
 ---
 
-
-![sdff](../images/adjacent-opt.jpg)
+![Programmering](../images/adjacent-opt.jpg)
 
 # Blog post content here
 
