@@ -13,14 +13,17 @@
   <body>
     <%- include ('partials/header') %>
     <main>
-      <section class="container">
+      <section class="container-blog blog-post">
         <header class="has-text-centered">
-          <h1 class="is-1 is-size-3-mobile title white-color"><%= title %></h1>
+          <h1 class="white-color"><%= title %></h1>
           <div class="intro text">
-            <strong><%= description %> - <%= date %></strong>
+            <strong><%= description %></strong>
+          </div>
+          <div class="intro text">
+            <strong><%= date %> - <%= author %></strong>
           </div>
         </header>
-        <article><%- post %></article>
+        <article class="post"><%- post %></article>
       </section>
     </main>
     <section class="section"><%- include ('partials/footer') %></section>

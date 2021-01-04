@@ -44,6 +44,7 @@ router.get('/blog/:article', (req, res) => {
 	console.log(result);
 	res.render('posts', {
 		post: result,
+		author: file.data.author,
 		title: file.data.title,
 		date: file.data.date,
 		description: file.data.description,
