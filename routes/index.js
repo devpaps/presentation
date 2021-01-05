@@ -38,7 +38,9 @@ router.get('/blog/:article', (req, res) => {
 	const file = matter.read('./blog/' + req.params.article + '.md');
 
 	// use markdown-it to convert content to HTML
-	var md = require('markdown-it')();
+	var md = require('markdown-it')({
+		html: true
+	});
 	let content = file.content;
 	var result = md.render(content);
 	console.log(result);

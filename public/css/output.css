@@ -184,7 +184,7 @@ strong {
   color: inherit;
 }
 
-.button .icon {
+.button .icon,.button .icon.is-medium {
   height: 1.5em;
   width: 1.5em;
 }
@@ -349,6 +349,10 @@ strong {
   font-size: 1rem;
 }
 
+.button.is-medium {
+  font-size: 1.25rem;
+}
+
 .button[disabled] {
   background-color: #fff;
   border-color: #dbdbdb;
@@ -467,12 +471,21 @@ strong {
   font-size: 75%;
 }
 
+.content.is-medium {
+  font-size: 1.25rem;
+}
+
 .icon {
   align-items: center;
   display: inline-flex;
   justify-content: center;
   height: 1.5rem;
   width: 1.5rem;
+}
+
+.icon.is-medium {
+  height: 2rem;
+  width: 2rem;
 }
 
 .image {
@@ -671,6 +684,10 @@ strong {
   display: flex;
   justify-content: flex-start;
   position: relative;
+}
+
+.file.is-medium {
+  font-size: 1.25rem;
 }
 
 .file.has-name .file-name {
@@ -2529,6 +2546,10 @@ a.has-text-info:focus,a.has-text-info:hover {
   font-weight: 400!important;
 }
 
+.has-text-weight-medium {
+  font-weight: 500!important;
+}
+
 .has-text-weight-bold {
   font-weight: 700!important;
 }
@@ -2833,6 +2854,12 @@ a.has-text-info:focus,a.has-text-info:hover {
   }
 }
 
+@media screen and (min-width:769px),print {
+  .hero.is-medium .hero-body {
+    padding: 9rem 1.5rem;
+  }
+}
+
 .hero.is-fullheight-with-navbar .hero-body {
   align-items: center;
   display: flex;
@@ -2856,6 +2883,12 @@ a.has-text-info:focus,a.has-text-info:hover {
 
 .section {
   padding: 3rem 1.5rem;
+}
+
+@media screen and (min-width:1024px) {
+  .section.is-medium {
+    padding: 9rem 1.5rem;
+  }
 }
 
 .footer {
