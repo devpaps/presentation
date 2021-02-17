@@ -6,6 +6,8 @@ const path = require('path');
 const router = require('./routes/index.js');
 const middleware = require('./middleware/index.js');
 
+const url = `http://localhost:`;
+
 app.set('view engine', 'ejs');
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -38,7 +40,7 @@ function logStartUpDetailsToConsole() {
 			});
 		}
 	});
-	console.info(`Server is listening on port ${port}.`);
+	console.info(`Server is listening on port ${url}${port}.`);
 	console.info('Available routes are:');
 	console.info(routes);
 }

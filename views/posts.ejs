@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="sv-SE">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" rel="preload" href="../css/output.css" />
-    <link rel="stylesheet" rel="preload" href="../css/blog.css" />
-    <link rel="stylesheet" rel="preload" href="../css/style.css" />
-    <link rel="icon" href="../images/favicon.png" />
-    <title>👋 Lars Jönsson - Webbutvecklare / <%= slug %></title>
-    <meta name="description" content="Går en kvalificerad yrkesexamen inom webbutveckling där fokus ligger på Javascript, React och .Net. Jag har även blogg där jag skriver om programmering samt hur det är att läsa till utvecklare på distans.">
-  </head>
-  <body>
-    <%- include ('partials/header') %>
-    <main>
-      <section class="container">
-        <header class="has-text-centered">
-          <h1 class="is-1 is-size-3-mobile title white-color"><%= title %></h1>
-          <div class="intro text">
-            <strong><%= description %> - <%= date %></strong>
-          </div>
-        </header>
-        <article><%- post %></article>
-      </section>
-    </main>
-    <section class="section"><%- include ('partials/footer') %></section>
-    <script src="../js/index.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" rel="preload" href="../css/output.css" />
+		<link rel="stylesheet" rel="preload" href="../css/style.css" />
+		<link rel="stylesheet" rel="preload" href="../css/dracula.css" />
+		<link rel="icon" href="../images/favicon.png" />
+		<title>👋 Lars Jönsson - Webbutvecklare / <%= title %></title>
+		<meta
+			name="description"
+			content="Går en kvalificerad yrkesexamen inom webbutveckling där fokus ligger på Javascript, React och .Net. Jag har även blogg där jag skriver om programmering samt hur det är att läsa till utvecklare på distans."
+		/>
+	</head>
+	<body>
+		<%- include ('partials/header') %>
+		<main>
+			<section class="container">
+				<header class="has-text-centered">
+					<h1 class="is-1 is-size-3-mobile title white-color"><%= title %></h1>
+					<div class="intro text">
+						<strong><%= description %> - <%= date %></strong>
+					</div>
+				</header>
+				<article><%- post %></article>
+			</section>
+		</main>
+		<section class="section"><%- include ('partials/footer') %></section>
+		<script src="../js/index.js"></script>
+	</body>
 </html>
