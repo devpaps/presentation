@@ -207,6 +207,12 @@ a:hover {
 
 /* BLOG */
 
+.grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+
 .date {
 	font-weight: 700;
 	vertical-align: text-bottom;

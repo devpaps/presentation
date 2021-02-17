@@ -58,6 +58,7 @@ router.get('/blog/:article', (req, res) => {
 	var result = md.render(content);
 	res.render('posts', {
 		post: result,
+		author: file.data.author,
 		title: file.data.title,
 		date: new Intl.DateTimeFormat('sv-SE', { dateStyle: 'long' }).format(now),
 		description: file.data.description,

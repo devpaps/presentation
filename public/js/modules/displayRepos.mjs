@@ -15,11 +15,11 @@ export function displayRepos(repos) {
       <a href="${repo.html_url}">
         <div class="repo border">
           <h1 class="title is-4 is-capitalized">${repo.name}</h1>
-          <h2 class="is-capitalized">${
+          <p class="is-capitalized">${
 						repo.description
 							? repo.description
 							: `Ingen beskrivning tillgänglig`
-					}</h2>
+					}</p>
           </div>
         </a>
     `

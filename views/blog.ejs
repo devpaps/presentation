@@ -7,13 +7,13 @@
       <section class="section">
         <div class="container">
           <div class="white-color mb-6">
-            <h1 class="title is-1">Artiklar</h1>
-            <h2 class="subtitle is-4">Tips &amp; tricks inom Javascript och rent allmänt tjöt.</h2>
+            <h1>Artiklar</h1>
+            <h2>Tips &amp; tricks inom Javascript och rent allmänt tjöt.</h2>
           </div>
-          <div class="columns">
+          <div class="grid">
             <% for (post of posts) { %>
               <% const file = matter.read('blog/' + post); %> 
-                <div class="column">
+                <div class="grid-column">
                   <div class="card">
                     <div class="card-image">
                       <figure class="image is-4 by-3">
